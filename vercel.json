@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/option-2", "destination": "/option-2.html" },
+    { "source": "/option-3", "destination": "/option-3.html" }
+  ],
+  "cleanUrls": true
+}
