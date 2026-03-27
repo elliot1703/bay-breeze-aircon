@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Breeze Air Conditioning — Redlands &amp; Bayside Brisbane Split System Experts</title>
+    <meta name="description" content="4,000+ split systems installed since 2005. 6-year warranty including refrigerant leaks. Fujitsu, Mitsubishi, Actron Air. Call 0411 422 166 for a free quote.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           BAY BREEZE AIR CONDITIONING
+           Landing Page — Option 1
+           Palette: Coastal teal + warm grey + white
+           Fonts: Fraunces (display) + DM Sans (body)
+           ============================================ */
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Primary palette — coastal reliability */
+            --teal-deep: #0C6B6A;
+            --teal-mid: #0E8382;
+            --teal-light: #E8F5F4;
+            --teal-accent: #14A89E;
+
+            /* Neutrals */
+            --charcoal: #1E2A2A;
+            --warm-grey: #4A5656;
+            --mid-grey: #7A8A8A;
+            --light-grey: #E8EDED;
+            --off-white: #F7FAFA;
+            --warm-white: #FAFBFB;
+
+            /* Accent */
+            --amber: #D4922A;
+            --amber-light: #FEF7EC;
+
+            /* Functional */
+            --shadow-sm: 0 1px 3px rgba(12, 107, 106, 0.08);
+            --shadow-md: 0 4px 16px rgba(12, 107, 106, 0.1);
+            --shadow-lg: 0 8px 32px rgba(12, 107, 106, 0.12);
+            --radius: 6px;
+            --radius-lg: 12px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--warm-white);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Fraunces', serif;
+            line-height: 1.15;
+            color: var(--charcoal);
+        }
+
+        h1 { font-size: 2.75rem; font-weight: 800; }
+        h2 { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.01em; }
+        h3 { font-size: 1.35rem; font-weight: 600; }
+
+        p { color: var(--warm-grey); }
+
+        a { color: var(--teal-deep); text-decoration: none; }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ── TOPBAR ── */
+        .topbar {
+            background: var(--charcoal);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.82rem;
+            padding: 8px 0;
+            letter-spacing: 0.02em;
+        }
+
+        .topbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .topbar a {
+            color: rgba(255,255,255,0.9);
+            font-weight: 500;
+        }
+
+        .topbar-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        /* ── NAV ── */
+        .nav {
+            background: var(--warm-white);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--light-grey);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .nav.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .nav-brand-name {
+            font-family: 'Fraunces', serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--teal-deep);
+            line-height: 1.1;
+        }
+
+        .nav-brand-tagline {
+            font-size: 0.75rem;
+            color: var(--mid-grey);
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--teal-deep);
+            font-family: 'Fraunces', serif;
+        }
+
+        .nav-phone svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--teal-deep);
+        }
+
+        .nav-phone:hover {
+            color: var(--teal-mid);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: linear-gradient(165deg, var(--teal-deep) 0%, #0A5A59 100%);
+            padding: 80px 0 88px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -60%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--amber);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 680px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-badge svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--amber);
+        }
+
+        .hero h1 {
+            color: #fff;
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .hero h1 .highlight {
+            color: var(--amber);
+            display: block;
+        }
+
+        .hero-sub {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.15rem;
+            line-height: 1.55;
+            margin-bottom: 32px;
+            max-width: 520px;
+        }
+
+        .hero-phone-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            color: var(--teal-deep);
+            padding: 16px 32px;
+            border-radius: var(--radius);
+            font-family: 'Fraunces', serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        }
+
+        .hero-phone-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            color: var(--teal-deep);
+        }
+
+        .hero-phone-cta svg {
+            width: 28px;
+            height: 28px;
+            fill: var(--teal-deep);
+        }
+
+        .hero-phone-sub {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.88rem;
+            margin-top: 12px;
+        }
+
+        /* WARRANTY BANNER */
+        .warranty-banner {
+            background: var(--amber);
+            padding: 0;
+            position: relative;
+        }
+
+        .warranty-banner .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .warranty-banner-text {
+            font-family: 'Fraunces', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .warranty-banner-sub {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.85);
+        }
+
+        /* ── TRUST STATS ── */
+        .trust-stats {
+            padding: 80px 0;
+            background: var(--warm-white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 32px 16px;
+            background: #fff;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--light-grey);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-number {
+            font-family: 'Fraunces', serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--teal-deep);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.92rem;
+            font-weight: 500;
+            color: var(--warm-grey);
+            line-height: 1.4;
+        }
+
+        .stat-card.featured {
+            background: var(--teal-deep);
+            border-color: var(--teal-deep);
+        }
+
+        .stat-card.featured .stat-number {
+            color: var(--amber);
+        }
+
+        .stat-card.featured .stat-label {
+            color: rgba(255,255,255,0.85);
+        }
+
+        /* ── SERVICES ── */
+        .services {
+            padding: 88px 0;
+            background: var(--off-white);
+        }
+
+        .section-header {
+            text-align: left;
+            margin-bottom: 48px;
+            max-width: 560px;
+        }
+
+        .section-header.centered {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-eyebrow {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--teal-mid);
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 {
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            border: 1px solid var(--light-grey);
+            transition: box-shadow 0.25s ease;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .service-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: var(--teal-light);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--teal-deep);
+        }
+
+        .service-card h3 {
+            margin-bottom: 8px;
+            color: var(--charcoal);
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        /* ── BRANDS ── */
+        .brands {
+            padding: 80px 0;
+            background: var(--warm-white);
+        }
+
+        .brands-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .brand-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: var(--off-white);
+            border: 1px solid var(--light-grey);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--mid-grey);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-align: center;
+            padding: 8px;
+            line-height: 1.3;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .brand-logo-placeholder:hover {
+            border-color: var(--teal-mid);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .brand-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--warm-grey);
+        }
+
+        /* ── SERVICE AREA ── */
+        .service-area {
+            padding: 88px 0;
+            background: var(--off-white);
+        }
+
+        .area-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .area-text p {
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+
+        .area-suburbs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 24px;
+        }
+
+        .area-suburb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        .area-suburb svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--teal-mid);
+            flex-shrink: 0;
+        }
+
+        .area-map {
+            background: var(--teal-deep);
+            border-radius: var(--radius-lg);
+            padding: 48px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            min-height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .area-map::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .area-map h3 {
+            color: #fff;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .area-map p {
+            color: rgba(255,255,255,0.75);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .area-map-phone {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--amber);
+        }
+
+        /* ── WHY CHOOSE US ── */
+        .why-us {
+            padding: 88px 0;
+            background: var(--warm-white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .why-card {
+            padding: 40px 32px;
+            border-radius: var(--radius-lg);
+            background: #fff;
+            border: 1px solid var(--light-grey);
+        }
+
+        .why-card-number {
+            font-family: 'Fraunces', serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--teal-light);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .why-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .why-card p {
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        /* ── CTA SECTION ── */
+        .cta-section {
+            padding: 96px 0;
+            background: linear-gradient(165deg, var(--teal-deep) 0%, #0A5A59 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            color: #fff;
+            font-size: 2.6rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.75);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-phone-big {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            background: #fff;
+            color: var(--teal-deep);
+            padding: 20px 48px;
+            border-radius: var(--radius);
+            font-family: 'Fraunces', serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        }
+
+        .cta-phone-big:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            color: var(--teal-deep);
+        }
+
+        .cta-phone-big svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--teal-deep);
+        }
+
+        .cta-or {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.88rem;
+            margin-top: 20px;
+        }
+
+        .cta-email {
+            color: rgba(255,255,255,0.8);
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 1px;
+        }
+
+        .cta-email:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        /* ── CONTACT ── */
+        .contact {
+            padding: 80px 0;
+            background: var(--off-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .contact-card {
+            padding: 32px;
+            background: #fff;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--light-grey);
+        }
+
+        .contact-card h3 {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-card h3 svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--teal-mid);
+        }
+
+        .contact-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .contact-card a {
+            font-weight: 500;
+        }
+
+        .contact-card a:hover {
+            color: var(--teal-mid);
+        }
+
+        .licence-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .licence-list li {
+            font-size: 0.88rem;
+            color: var(--warm-grey);
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .licence-list li svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--teal-mid);
+        }
+
+        /* ── FOOTER ── */
+        .footer {
+            background: var(--charcoal);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.82rem;
+        }
+
+        .footer-brand {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            color: rgba(255,255,255,0.7);
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        /* ── STICKY MOBILE CTA ── */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            background: var(--teal-deep);
+            padding: 12px 16px;
+            box-shadow: 0 -4px 24px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #fff;
+            color: var(--teal-deep);
+            padding: 14px;
+            border-radius: var(--radius);
+            font-family: 'Fraunces', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .sticky-cta a svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--teal-deep);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 900px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.75rem; }
+            .hero h1 { font-size: 2.5rem; }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .area-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .brands-row {
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            body { font-size: 16px; }
+
+            .topbar { display: none; }
+
+            .nav {
+                padding: 12px 0;
+            }
+
+            .nav-brand-name {
+                font-size: 1.15rem;
+            }
+
+            .nav-phone {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                padding: 56px 0 64px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-sub {
+                font-size: 1rem;
+            }
+
+            .hero-phone-cta {
+                font-size: 1.35rem;
+                padding: 14px 24px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stat-number {
+                font-size: 2.2rem;
+            }
+
+            .trust-stats,
+            .services,
+            .brands,
+            .service-area,
+            .why-us,
+            .contact {
+                padding: 56px 0;
+            }
+
+            .cta-section {
+                padding: 64px 0;
+            }
+
+            .cta-section h2 {
+                font-size: 1.9rem;
+            }
+
+            .cta-phone-big {
+                font-size: 1.5rem;
+                padding: 16px 32px;
+            }
+
+            .area-suburbs {
+                grid-template-columns: 1fr;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+
+            /* Pad bottom so sticky CTA doesn't overlap footer */
+            .footer {
+                padding-bottom: 96px;
+            }
+
+            .section-header {
+                text-align: left;
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                transition: none !important;
+                animation: none !important;
+            }
+            html { scroll-behavior: auto; }
+        }
+
+        /* Fade-in on scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container">
+            <span>54 Finucane Rd, Capalaba QLD 4157</span>
+            <div class="topbar-right">
+                <span>Mon–Fri 8:30am–5:00pm</span>
+                <a href="tel:0411422166">0411 422 166</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="nav-brand-name">Bay Breeze</span>
+                <span class="nav-brand-tagline">Air Conditioning</span>
+            </div>
+            <a href="tel:0411422166" class="nav-phone">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
+                0411 422 166
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+                    4,000+ split systems installed across Bayside Brisbane
+                </div>
+                <h1>
+                    Your local split system experts.
+                    <span class="highlight">6-year warranty.</span>
+                </h1>
+                <p class="hero-sub">
+                    Family-owned since 2005. Licensed since 1996. We install Fujitsu, Mitsubishi and Actron Air split systems — and we back every install with the longest warranty in the Redlands.
+                </p>
+                <a href="tel:0411422166" class="hero-phone-cta">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
+                    0411 422 166
+                </a>
+                <p class="hero-phone-sub">Call for a free quote — or we'll call you back within the hour</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty Banner -->
+    <div class="warranty-banner">
+        <div class="container">
+            <span class="warranty-banner-text">6-Year Installation Warranty — Including Refrigerant Leaks</span>
+            <span class="warranty-banner-sub">The most comprehensive install warranty in the Redlands</span>
+        </div>
+    </div>
+
+    <!-- Trust Stats -->
+    <section class="trust-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">4,000+</div>
+                    <div class="stat-label">Split systems installed</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">21</div>
+                    <div class="stat-label">Years in business</div>
+                </div>
+                <div class="stat-card featured fade-in">
+                    <div class="stat-number">6 Yr</div>
+                    <div class="stat-label">Installation warranty</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Years licensed electrician</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-eyebrow">What We Do</div>
+                <h2>Split system specialists. Nothing else.</h2>
+                <p>We don't spread ourselves thin across ducted, multi-head, and commercial HVAC. We do one thing — install split system air conditioners — and we do it better than anyone in the Redlands.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Residential Installation</h3>
+                        <p>New split system supply and installation for homes. We'll help you choose the right unit for your room size, aspect, and insulation — then install it to the standard we'd expect in our own home.</p>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Commercial Installation</h3>
+                        <p>Office, retail, and commercial split system installs. Same quality, same warranty. We work around your business hours so you're not losing a day of trade.</p>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zM8 6h3v2H8V6zm5 0h3v2h-3V6zM8 10h3v2H8v-2zm5 0h3v2h-3v-2z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Supply Only</h3>
+                        <p>Already have your sparky sorted? We supply Fujitsu, Mitsubishi Electric, Mitsubishi Heavy Industries, and Actron Air units at competitive prices.</p>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Free Quotes</h3>
+                        <p>We come out, measure up, and give you an honest quote — no pressure, no hidden costs. If we're not the right fit, we'll tell you straight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <div class="container">
+            <div class="section-header centered fade-in">
+                <div class="section-eyebrow">Brands We Install</div>
+                <h2>Premium brands. Properly installed.</h2>
+                <p>We only supply and install brands we'd put in our own homes. Every unit comes with the full manufacturer warranty — plus our 6-year install warranty on top.</p>
+            </div>
+            <div class="brands-row fade-in">
+                <div class="brand-item">
+                    <div class="brand-logo-placeholder">Fujitsu</div>
+                    <span class="brand-name">Fujitsu</span>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-placeholder">Mitsubishi Electric</div>
+                    <span class="brand-name">Mitsubishi Electric</span>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-placeholder">Mitsubishi Heavy</div>
+                    <span class="brand-name">Mitsubishi Heavy Industries</span>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-placeholder">Actron Air</div>
+                    <span class="brand-name">Actron Air</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area" id="area">
+        <div class="container">
+            <div class="area-layout">
+                <div class="area-text fade-in">
+                    <div class="section-header" style="margin-bottom: 32px;">
+                        <div class="section-eyebrow">Service Area</div>
+                        <h2>Bayside Brisbane's split system team</h2>
+                    </div>
+                    <p>Based in Capalaba, we service the Redlands and Bayside Brisbane suburbs. If you're within 30 minutes of Moreton Bay, chances are we've already installed a few units on your street.</p>
+                    <div class="area-suburbs">
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Redlands
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Cleveland
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Wynnum
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Manly
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Capalaba
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Victoria Point
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Wellington Point
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Thornlands
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Birkdale
+                        </div>
+                        <div class="area-suburb">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Alexandra Hills
+                        </div>
+                    </div>
+                </div>
+                <div class="area-map fade-in">
+                    <h3>Based in Capalaba</h3>
+                    <p>54 Finucane Rd, Capalaba QLD 4157. Family-owned, locally operated — your neighbours probably know us already.</p>
+                    <a href="tel:0411422166" class="area-map-phone">0411 422 166</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why">
+        <div class="container">
+            <div class="section-header centered fade-in">
+                <div class="section-eyebrow">Why Bay Breeze</div>
+                <h2>We're not the cheapest. We're the ones you won't have to call back.</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-card-number">01</div>
+                    <h3>6-Year Warranty That Actually Covers Things</h3>
+                    <p>Most installers offer 1 year on workmanship. We offer 6 — including refrigerant leaks, which is where 90% of problems show up. If something goes wrong with our install, we fix it. No arguments.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-card-number">02</div>
+                    <h3>Licensed Electrician Since 1996</h3>
+                    <p>Your aircon install involves electrical work. A lot of "aircon installers" subcontract the electrical to whoever's available. We do it ourselves — fully licensed, fully insured, no shortcuts.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-card-number">03</div>
+                    <h3>4,000+ Installs. Zero Guesswork.</h3>
+                    <p>After 4,000+ split system installs, there's no room layout, wall type, or access issue we haven't seen. We know which unit suits your space before we even measure up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container fade-in">
+            <h2>Ready for a cooler home?</h2>
+            <p>Call us for a free, no-pressure quote. We'll come out, measure up, and give you an honest recommendation — even if that means telling you a smaller unit will do the job.</p>
+            <a href="tel:0411422166" class="cta-phone-big">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
+                0411 422 166
+            </a>
+            <p class="cta-or">or email <a href="mailto:info@baybreezeairconditioning.com.au" class="cta-email">info@baybreezeairconditioning.com.au</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Details -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header centered fade-in" style="margin-bottom: 40px;">
+                <div class="section-eyebrow">Contact</div>
+                <h2>Get in touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
+                        Phone
+                    </h3>
+                    <p>
+                        <a href="tel:0411422166" style="font-size: 1.15rem; font-weight: 700;">0411 422 166</a><br>
+                        <a href="tel:0738235240" style="margin-top: 4px; display: inline-block;">(07) 3823 5240</a><br>
+                        <span style="font-size: 0.85rem; color: var(--mid-grey); margin-top: 8px; display: inline-block;">Mon–Fri 8:30am–5:00pm</span>
+                    </p>
+                </div>
+                <div class="contact-card fade-in">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Location
+                    </h3>
+                    <p>
+                        54 Finucane Rd<br>
+                        Capalaba, QLD 4157<br>
+                        <a href="mailto:info@baybreezeairconditioning.com.au" style="margin-top: 8px; display: inline-block;">info@baybreezeairconditioning.com.au</a>
+                    </p>
+                </div>
+                <div class="contact-card fade-in">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>
+                        Licences
+                    </h3>
+                    <ul class="licence-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Electrical Contractor: #12112
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Refrigerant Handling: L026227
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Refrigerant Trading: #54114
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">Bay Breeze Air Conditioning</div>
+            <p>&copy; 2005–2026 Bay Breeze Air Conditioning. ABN pending. Capalaba, QLD.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="tel:0411422166">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
+            Call 0411 422 166 — Free Quote
+        </a>
+    </div>
+
+    <script>
+        // Sticky nav shadow on scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        // Fade-in on scroll (IntersectionObserver)
+        const fadeEls = document.querySelectorAll('.fade-in');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            fadeEls.forEach(el => observer.observe(el));
+        } else {
+            // Fallback: show everything
+            fadeEls.forEach(el => el.classList.add('visible'));
+        }
+
+        // Respect reduced motion
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            fadeEls.forEach(el => el.classList.add('visible'));
+        }
+    </script>
+
+</body>
+</html>
