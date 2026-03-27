@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Breeze Air Conditioning — Bayside Brisbane Split System Specialists</title>
+    <meta name="description" content="4,000+ split systems installed since 2005. 6-year warranty including refrigerant leaks. Bayside Brisbane's most trusted air conditioning installer. Call 0411 422 166.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-warm: #fefcf8;
+            --bg-sand: #f5f0e8;
+            --bg-sand-light: #faf7f2;
+            --green: #2d5a3d;
+            --green-dark: #234a31;
+            --green-light: #e8f0eb;
+            --charcoal: #3a3a3a;
+            --text-body: #555555;
+            --text-light: #888888;
+            --border: #e5ddd0;
+            --border-light: #ede7dc;
+            --font-display: 'Libre Baskerville', Georgia, serif;
+            --font-body: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+            --max-width: 1120px;
+            --radius: 12px;
+            --radius-sm: 8px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.65;
+            color: var(--text-body);
+            background-color: var(--bg-warm);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ── Typography ── */
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--charcoal);
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            line-height: 1.15;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            line-height: 1.3;
+        }
+
+        p {
+            max-width: 640px;
+        }
+
+        .label {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--green);
+        }
+
+        /* ── Layout ── */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 96px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 64px 0;
+            }
+        }
+
+        /* ── Animations ── */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-up {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+
+        /* ── Navigation ── */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(254, 252, 248, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-light);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .nav.scrolled {
+            box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .nav-brand {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 19px;
+            color: var(--charcoal);
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-body);
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: var(--charcoal);
+        }
+
+        .nav-phone {
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--green) !important;
+            transition: opacity 0.2s !important;
+        }
+
+        .nav-phone:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 900px) {
+            .nav-links li:not(:last-child) {
+                display: none;
+            }
+        }
+
+        /* ── Buttons ── */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: var(--green);
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            white-space: nowrap;
+        }
+
+        .btn-primary:hover {
+            background: var(--green-dark);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: transparent;
+            color: var(--charcoal);
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 500;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--charcoal);
+            background: var(--bg-sand-light);
+        }
+
+        /* ── Hero ── */
+        .hero {
+            background: var(--bg-sand);
+            padding: 80px 0 96px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: var(--green-light);
+            opacity: 0.5;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-label {
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            max-width: 680px;
+            margin-bottom: 20px;
+        }
+
+        .hero-sub {
+            font-size: 19px;
+            color: var(--text-body);
+            max-width: 560px;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .hero-phone-callout {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--bg-warm);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 24px;
+            margin-bottom: 32px;
+        }
+
+        .hero-phone-callout svg {
+            color: var(--green);
+            flex-shrink: 0;
+        }
+
+        .hero-phone-number {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--green);
+            letter-spacing: 0.01em;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 56px 0 72px;
+            }
+
+            .hero::before {
+                width: 240px;
+                height: 240px;
+                right: -80px;
+                bottom: -80px;
+            }
+        }
+
+        /* ── Trust Stats ── */
+        .stats {
+            background: var(--bg-warm);
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 24px 16px;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(2.25rem, 5vw, 3rem);
+            color: var(--green);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-body);
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .stat-item {
+                padding: 24px 8px;
+            }
+        }
+
+        /* ── Warranty Highlight ── */
+        .warranty {
+            background: var(--green);
+            color: #fff;
+            border-radius: var(--radius);
+            max-width: var(--max-width);
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .warranty-wrapper {
+            padding: 0 24px;
+        }
+
+        .warranty .container {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        .warranty-badge {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .warranty-badge-number {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .warranty-badge-label {
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .warranty-text h2 {
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .warranty-text p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 17px;
+            max-width: 520px;
+        }
+
+        @media (max-width: 600px) {
+            .warranty .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 24px;
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
+
+            .warranty-badge {
+                width: 96px;
+                height: 96px;
+            }
+
+            .warranty-badge-number {
+                font-size: 2.75rem;
+            }
+
+            .warranty-text p {
+                max-width: 100%;
+            }
+        }
+
+        /* ── Services ── */
+        .services {
+            background: var(--bg-warm);
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .services-header p.label {
+            margin-bottom: 12px;
+        }
+
+        .services-header p:last-child {
+            margin: 16px auto 0;
+            color: var(--text-body);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--bg-sand-light);
+            border: 1px solid var(--border-light);
+            padding: 40px 32px;
+            border-radius: var(--radius);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--border);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .service-card-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            background: var(--green-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-card-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--green);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .service-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+
+        /* ── Brands ── */
+        .brands {
+            background: var(--bg-sand);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+            padding: 48px 0;
+        }
+
+        .brands-label {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .brands-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .brand-name {
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+
+        .brand-name:hover {
+            color: var(--charcoal);
+        }
+
+        .brand-divider {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--border);
+        }
+
+        @media (max-width: 600px) {
+            .brands-inner {
+                gap: 20px 32px;
+            }
+
+            .brand-divider {
+                display: none;
+            }
+        }
+
+        /* ── Service Area ── */
+        .area {
+            background: var(--bg-sand-light);
+        }
+
+        .area-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .area-content .label {
+            margin-bottom: 12px;
+        }
+
+        .area-content > p {
+            margin-bottom: 32px;
+        }
+
+        .area-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 32px;
+        }
+
+        .area-list li {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--charcoal);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .area-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            opacity: 0.5;
+        }
+
+        .area-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .area-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .area-split {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .area-image {
+                order: -1;
+            }
+        }
+
+        /* ── Why Choose Us ── */
+        .why {
+            background: var(--bg-warm);
+        }
+
+        .why-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .why-header .label {
+            margin-bottom: 12px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 20px;
+            padding: 28px 24px;
+            background: var(--bg-sand-light);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            transition: border-color 0.3s;
+        }
+
+        .why-item:hover {
+            border-color: var(--border);
+        }
+
+        .why-icon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            background: var(--green-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .why-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--green);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .why-content h3 {
+            margin-bottom: 6px;
+            font-size: 1.0625rem;
+        }
+
+        .why-content p {
+            font-size: 15px;
+            color: var(--text-body);
+            line-height: 1.55;
+        }
+
+        @media (max-width: 768px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+
+        /* ── CTA Section ── */
+        .cta-section {
+            background: var(--bg-sand);
+        }
+
+        .cta-inner {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-inner h2 {
+            margin-bottom: 12px;
+        }
+
+        .cta-inner > p {
+            margin: 0 auto 32px;
+            color: var(--text-body);
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ── Contact ── */
+        .contact {
+            background: var(--bg-warm);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .contact-header .label {
+            margin-bottom: 12px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px;
+        }
+
+        .contact-block {
+            background: var(--bg-sand-light);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            text-align: center;
+        }
+
+        .contact-block .label {
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
+
+        .contact-value a {
+            color: var(--charcoal);
+            transition: color 0.2s;
+        }
+
+        .contact-value a:hover {
+            color: var(--green);
+        }
+
+        .contact-phone {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+            color: var(--green);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+
+        /* ── Footer ── */
+        .footer {
+            background: var(--charcoal);
+            color: rgba(255, 255, 255, 0.6);
+            padding: 40px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-left p,
+        .footer-right p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .footer-right {
+                text-align: left;
+            }
+        }
+
+        /* ── Mobile CTA Bar ── */
+        .mobile-cta {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            .mobile-cta {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 200;
+                background: rgba(254, 252, 248, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-top: 1px solid var(--border);
+                padding: 12px 16px;
+                gap: 12px;
+                box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.06);
+            }
+
+            .mobile-cta a {
+                flex: 1;
+                text-align: center;
+                padding: 14px 16px;
+                border-radius: var(--radius-sm);
+                font-family: var(--font-body);
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .mobile-cta .mobile-cta-phone {
+                background: var(--green);
+                color: #fff;
+            }
+
+            .mobile-cta .mobile-cta-quote {
+                background: transparent;
+                color: var(--charcoal);
+                border: 1px solid var(--border);
+            }
+
+            body {
+                padding-bottom: 72px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <a href="#" class="nav-brand">Bay Breeze Air Conditioning</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#area">Service Area</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:0411422166" class="nav-phone">0411 422 166</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <p class="label hero-label fade-up">Your Local Split System Specialists — Capalaba, Brisbane</p>
+            <h1 class="fade-up">Honest work.<br>Done right the first time.</h1>
+            <p class="hero-sub fade-up">Family-run since 2005. Over 4,000 split systems installed across the Redlands, Wynnum, and Manly — all backed by our 6-year warranty, including refrigerant leaks.</p>
+            <a href="tel:0411422166" class="hero-phone-callout fade-up">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <span class="hero-phone-number">0411 422 166</span>
+            </a>
+            <div class="hero-actions fade-up">
+                <a href="tel:0411422166" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call Now
+                </a>
+                <a href="#contact" class="btn-secondary">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-up">
+                    <div class="stat-number">4,000+</div>
+                    <div class="stat-label">Split systems installed</div>
+                </div>
+                <div class="stat-item fade-up">
+                    <div class="stat-number">21</div>
+                    <div class="stat-label">Years in business</div>
+                </div>
+                <div class="stat-item fade-up">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Year warranty</div>
+                </div>
+                <div class="stat-item fade-up">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Years licensed electrician</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty -->
+    <div class="warranty-wrapper">
+        <section class="warranty" id="warranty">
+            <div class="container fade-up">
+                <div class="warranty-badge">
+                    <span class="warranty-badge-number">6</span>
+                    <span class="warranty-badge-label">Years</span>
+                </div>
+                <div class="warranty-text">
+                    <h2>Our warranty actually means something.</h2>
+                    <p>Most installers give you 12 months on labour and hope you don't call back. We back every install for six full years — including refrigerant leaks, the one thing most warranties quietly exclude. No fine print. No gotchas.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="services-header fade-up">
+                <p class="label">What We Do</p>
+                <h2>Split systems. That's our thing.</h2>
+                <p>We don't try to do everything. We install split system air conditioners — residential and commercial — and we've spent 21 years getting really good at it.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Home Installs</h3>
+                    <p>Bedrooms, living rooms, home offices. We'll recommend the right size, install it cleanly, and back it for six years. Simple as that.</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Commercial Fit-Outs</h3>
+                    <p>Offices, shops, and commercial spaces. We handle the electrical and refrigeration ourselves — no subcontractors, no runaround.</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                    </div>
+                    <h3>Supply Only</h3>
+                    <p>Need a unit without the install? We supply Fujitsu, Mitsubishi Electric, Mitsubishi Heavy Industries, and Actron Air at trade pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <div class="container">
+            <p class="label brands-label">Brands We Install &amp; Supply</p>
+            <div class="brands-inner">
+                <span class="brand-name">Fujitsu</span>
+                <span class="brand-divider"></span>
+                <span class="brand-name">Mitsubishi Electric</span>
+                <span class="brand-divider"></span>
+                <span class="brand-name">Mitsubishi Heavy Industries</span>
+                <span class="brand-divider"></span>
+                <span class="brand-name">Actron Air</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="area section" id="area">
+        <div class="container">
+            <div class="area-split">
+                <div class="area-content fade-up">
+                    <p class="label">Service Area</p>
+                    <h2>Bayside Brisbane &amp; the Redlands</h2>
+                    <p>Based at 54 Finucane Rd, Capalaba — right in the heart of the Redlands. We're not an hour away on the other side of Brisbane. We're your neighbours.</p>
+                    <ul class="area-list">
+                        <li>Capalaba</li>
+                        <li>Cleveland</li>
+                        <li>Victoria Point</li>
+                        <li>Wynnum</li>
+                        <li>Manly</li>
+                        <li>Redland Bay</li>
+                        <li>Thornlands</li>
+                        <li>Wellington Point</li>
+                        <li>Birkdale</li>
+                        <li>Alexandra Hills</li>
+                    </ul>
+                </div>
+                <div class="area-image fade-up">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200" alt="Aerial view of Bayside Brisbane coastline and suburbs" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why section" id="why">
+        <div class="container">
+            <div class="why-header fade-up">
+                <p class="label">Why Bay Breeze</p>
+                <h2>What makes us different from<br>every other aircon installer</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-item fade-up">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="why-content">
+                        <h3>Licensed Electrician Since 1996</h3>
+                        <p>We hold our own electrical contractor's licence. Same team does the install and the wiring — no subcontractors, no coordination drama.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-up">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="why-content">
+                        <h3>Refrigerant Leaks Covered</h3>
+                        <p>The one thing most warranties quietly exclude? We cover it for six full years. That's how confident we are in our work.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-up">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="why-content">
+                        <h3>4,000+ Installs Since 2005</h3>
+                        <p>Two decades of split systems. Every install follows the same process — whether it's one unit in a bedroom or twenty in a commercial fit-out.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-up">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="why-content">
+                        <h3>Genuinely Local</h3>
+                        <p>Based in Capalaba, servicing the Redlands, Wynnum, and Manly. We're not 45 minutes away — we're around the corner.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-up">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    </div>
+                    <div class="why-content">
+                        <h3>Free, No-Pressure Quotes</h3>
+                        <p>We'll come out, assess the space, recommend the right unit, and give you a fixed price. No call-out fee. No hard sell.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-up">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <div class="why-content">
+                        <h3>Split Systems Only</h3>
+                        <p>We don't spread thin across ducted, multi-head, and everything else. One thing, done properly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-inner fade-up">
+                <h2>Ready for a new split system?</h2>
+                <p>Free quote. No call-out fee. Installed right the first time.</p>
+                <div class="cta-actions">
+                    <a href="tel:0411422166" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call 0411 422 166
+                    </a>
+                    <a href="mailto:info@baybreezeairconditioning.com.au" class="btn-secondary">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-header fade-up">
+                <p class="label">Get in Touch</p>
+                <h2>We'd love to hear from you.</h2>
+            </div>
+            <div class="contact-grid fade-up">
+                <div class="contact-block">
+                    <span class="label">Call Us</span>
+                    <div class="contact-value">
+                        <a href="tel:0411422166" class="contact-phone">0411 422 166</a><br>
+                        <a href="tel:0738235240">Office: (07) 3823 5240</a>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <span class="label">Visit / Write</span>
+                    <div class="contact-value">
+                        54 Finucane Rd<br>
+                        Capalaba QLD 4157<br>
+                        <a href="mailto:info@baybreezeairconditioning.com.au">info@baybreezeaircon&shy;ditioning.com.au</a>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <span class="label">Hours</span>
+                    <div class="contact-value">
+                        Monday – Friday<br>
+                        8:30am – 5:00pm<br>
+                        <span style="color: var(--text-light);">Closed weekends &amp; public holidays</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <p>&copy; 2026 Bay Breeze Air Conditioning. All rights reserved.</p>
+                    <p style="margin-top: 8px;">
+                        Electrical Contractors Licence: 12112 &middot;
+                        Refrigerant Handling: L026227 &middot;
+                        Refrigerant Trading: #54114
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p>54 Finucane Rd, Capalaba QLD 4157</p>
+                    <p style="margin-top: 4px;"><a href="tel:0411422166">0411 422 166</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile CTA Bar -->
+    <div class="mobile-cta">
+        <a href="tel:0411422166" class="mobile-cta-phone">
+            Call 0411 422 166
+        </a>
+        <a href="#contact" class="mobile-cta-quote">
+            Free Quote
+        </a>
+    </div>
+
+    <script>
+        // Nav scroll shadow
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 16);
+        }, { passive: true });
+
+        // Fade-in on scroll
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        } else {
+            document.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
